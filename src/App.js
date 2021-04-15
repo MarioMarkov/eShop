@@ -1,10 +1,10 @@
 import './App.css';
-import { Navbar } from './components/Navbar';
-import Products from './components/Products';
+import { Navbar } from './components/layout/Navbar';
+import Products from './components/products/Products';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Orders } from './components/Orders';
-import AddProduct from './components/AddProduct';
+import Orders from './components/orders/Orders';
+import AddProduct from './components/products/AddProduct';
 import { Provider } from 'react-redux';
 import store from './store';
 

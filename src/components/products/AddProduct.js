@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { addProduct } from '../actions/productActions';
+import { addProduct } from '../../actions/productActions';
 
 const AddProduct = ({ addProduct }) => {
   const [name, setName] = useState('');
@@ -8,7 +8,6 @@ const AddProduct = ({ addProduct }) => {
   const [image, setImage] = useState('');
 
   const onSubmit = (e) => {
-    e.preventDefault();
     if (name !== '' && image !== '' && price !== 0) {
       const newProduct = {
         name,
@@ -17,9 +16,9 @@ const AddProduct = ({ addProduct }) => {
       };
       addProduct(newProduct);
 
-      // setName('')
-      // setPrice(0)
-      // setImage('')
+      setName('');
+      setPrice(0);
+      setImage('');
     }
   };
 
@@ -27,7 +26,7 @@ const AddProduct = ({ addProduct }) => {
     <div className='container'>
       <span className='new-product'>New Product</span>
 
-      <form>
+      <form className='add-product-form'>
         <input
           type='text'
           onChange={(e) => setName(e.target.value)}
@@ -43,7 +42,7 @@ const AddProduct = ({ addProduct }) => {
           onChange={(e) => setImage(e.target.value)}
           placeholder='Image Url'
         />
-        <button onClick={onSubmit}>Submit</button>
+        <button onClick={onSubmit}>Save</button>
       </form>
     </div>
   );

@@ -1,7 +1,6 @@
-import { GET_PRODUCTS, ADD_PRODUCT } from './types';
+import { GET_PRODUCTS, ADD_PRODUCT, GET_ORDERS } from './types';
 
 export const getProducts = () => async (dispatch) => {
-  console.log('products');
   try {
     const res = await fetch('http://localhost:5000/products');
     const data = await res.json();
@@ -17,7 +16,6 @@ export const getProducts = () => async (dispatch) => {
 
 export const addProduct = (product) => async (dispatch) => {
   try {
-    console.log(product);
     const res = await fetch('http://localhost:5000/products', {
       method: 'POST',
       body: JSON.stringify(product),
@@ -28,6 +26,20 @@ export const addProduct = (product) => async (dispatch) => {
     const data = await res.json();
     dispatch({
       type: ADD_PRODUCT,
+      payload: data,
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const getOrders = () => async (dispatch) => {
+  try {
+    const res = await fetch('http://localhost:5000/orders');
+    const data = await res.json();
+    console.log(data);
+    dispatch({
+      type: GET_ORDERS,
       payload: data,
     });
   } catch (error) {

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { ProductItem } from './ProductItem';
 import { connect } from 'react-redux';
-import { getProducts } from '../actions/productActions';
+import { getProducts } from '../../actions/productActions';
 
 const Products = ({ product: { products }, getProducts }) => {
   useEffect(() => {
