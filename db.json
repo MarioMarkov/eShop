@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "name": "Rubberised Print T-Shirt",
+      "price": 9.99,
+      "image": "https://st.depositphotos.com/2251265/4803/i/450/depositphotos_48037605-stock-photo-man-wearing-t-shirt.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Contrast Top TRF",
+      "price": 11.99,
+      "image": "https://picture-cdn.wheretoget.it/tvrznj-i.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Tied Leather Heeled Sandals",
+      "price": 49.95,
+      "image": "https://celticandco.global.ssl.fastly.net/usercontent/img/col-12/69602.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Leather High Heel Sandals With Gathering",
+      "price": 39.95,
+      "image": "https://cf.shopee.com.my/file/36df2e1d04ca103f16ccefffa9927728"
+    },
+    {
+      "id": 4,
+      "name": "Pleated Palazzo Trousers TRF",
+      "price": 29.95,
+      "image": "https://cf.shopee.ph/file/fecc650ca5802d709890a66cc00cfe23"
+    },
+    {
+      "id": 5,
+      "name": "Skinny Trousers With Belt",
+      "price": 19.99,
+      "image": "https://emma.bg/images/products/damski-pantalon-faded-black-super-skinny-trousers-1.jpg"
+    },
+    {
+      "name": "Obuvki lil NasX",
+      "price": 1000,
+      "image": "https://wreg.com/wp-content/uploads/sites/18/2021/03/lil-nas-x-satan-shoes-1.jpg?w=1843&h=1037&crop=1",
+      "id": 6
+    }
+  ]
+}
