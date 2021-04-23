@@ -3,7 +3,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app
 
 ## You have to run
-
+npm install 
+npm run start
+npm i concurrently
 npm run dev -> starts the json:webserver and the react app
 
 ## Project Description
