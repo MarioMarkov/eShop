@@ -41,12 +41,6 @@
       "price": 1000,
       "image": "https://wreg.com/wp-content/uploads/sites/18/2021/03/lil-nas-x-satan-shoes-1.jpg?w=1843&h=1037&crop=1",
       "id": 6
-    },
-    {
-      "name": "Balenciga",
-      "price": 1000,
-      "image": "https://cdn.runrepeat.com/i/balenciaga/31210/balenciaga-triple-s-clear-sole-trainers-44ba-main.jpg",
-      "id": 7
     }
   ],
   "orders": [
